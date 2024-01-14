@@ -1,23 +1,23 @@
-// Step 1
-// Format code indentation and spacing
-// Add 'use strict';
+// Step 2
+// Change identifiers case
+// Add `let`
 
 // Return an array without duplicates
 
 "use strict";
 
-const DISTINCT = (data) => {
-  A = new Set();
-  w = 0;
-  data.forEach((a) => {
-    if (A.has(a)) {
+const distinct = (data) => {
+  let a = new Set();
+  let w = 0;
+  data.forEach((i) => {
+    if (a.has(i)) {
       delete data[w];
     } else {
-      A.add(a);
+      a.add(i);
     }
     w++;
   });
   return data.filter((x) => typeof x === "number");
 };
 
-module.exports = DISTINCT;
+module.exports = distinct;
