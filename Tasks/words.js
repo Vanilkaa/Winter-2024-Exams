@@ -22,4 +22,4 @@ const words = function(s) {
   return numberOfWordsInS;
 };
 
-module.exports = Words;
+module.exports = words;
