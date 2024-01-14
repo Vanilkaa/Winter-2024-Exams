@@ -1,7 +1,9 @@
 // Get one random element from an array
 
-//Step 1
-//Shorten arrow function
+//Step 2
+// Add 'use strict';
+
+'use strict';
 
 const SAMPLE = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
