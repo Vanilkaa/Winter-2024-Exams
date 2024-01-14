@@ -1,15 +1,14 @@
 // Get day number
 
-// Step 2
-// Change identifiers case
+// Step 3
+// Move variable declaration to cycle
 
 'use strict';
 
 let D = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 const parseDay = (s) => {
-  let i;
-  for (i = 0; i < D.length; i++) {
+  for (let i = 0; i < D.length; i++) {
     if (s.startsWith(D[i].toLowerCase())) {
       return i + 1;
     }
