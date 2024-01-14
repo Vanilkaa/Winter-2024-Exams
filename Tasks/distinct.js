@@ -1,6 +1,12 @@
+// Step 1
+// Format code indentation and spacing
+// Add 'use strict';
+
 // Return an array without duplicates
 
-DISTINCT = (data) => {
+"use strict";
+
+const DISTINCT = (data) => {
   A = new Set();
   w = 0;
   data.forEach((a) => {
@@ -11,8 +17,7 @@ DISTINCT = (data) => {
     }
     w++;
   });
-  return data.filter
-  (x => typeof x === 'number');
+  return data.filter((x) => typeof x === "number");
 };
 
 module.exports = DISTINCT;
