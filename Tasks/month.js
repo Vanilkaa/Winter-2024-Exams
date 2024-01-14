@@ -1,19 +1,18 @@
 // Get month number
 
-//Step 2
-// Add 'use strict';
-// Add `const`
+//Step 3
+// Change identifiers case
 
 'use strict';
 
-let Months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec',];
+let months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec',];
 
-const Month = (s) => {
-  l = Months.length;
+const month = (s) => {
+  let l = months.length;
   for (let i = 0; i < l; i++) {
-    if (s.toLowerCase().startsWith(Months[i])) return i + 1;
+    if (s.toLowerCase().startsWith(months[i])) return i + 1;
   }
   return -1;
 };
 
-module.exports = Month;
+module.exports = month;
