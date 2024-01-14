@@ -1,9 +1,12 @@
 // Count words in a string
 
-//Step 1
-// Remove useless blocks
+//Step 2
+// Add 'use strict';
+// Add `const` and `let`
 
-Words = function(s) {
+'use strict';
+
+const Words = function(s) {
   let number_of_words_in_s = 0;
   let flag = false;
 
