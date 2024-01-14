@@ -1,10 +1,8 @@
-// Step 2
-// Change identifiers case
-// Add `let`
-
+// Step 3
+// Fix step 1
 // Return an array without duplicates
 
-"use strict";
+'use strict';
 
 const distinct = (data) => {
   let a = new Set();
