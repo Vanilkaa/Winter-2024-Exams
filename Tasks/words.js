@@ -1,40 +1,23 @@
 // Count words in a string
 
-Words = function (s) {
-  number_of_words_in_s = 0;
-  flag = false;
-  for (c of s) {
-    if (!flag) {
-      if (c === ' ') {
-        if (flag === true) {
-          flag = false;
-        } else {
-          flag = false;
-        }
-      } else {
-        if (flag === true) {
-          flag = true;
-        } else {
-          flag = true;
-        }
+//Step 1
+// Remove useless blocks
+
+Words = function(s) {
+  let number_of_words_in_s = 0;
+  let flag = false;
+
+  for (let c of s) {
+    if (c === ' ') {
+      flag = false;
+    } else {
+      if (!flag) {
         number_of_words_in_s++;
       }
-    } else {
-      if (c === ' ') {
-        if (flag === true) {
-          flag = false;
-        } else {
-          flag = false;
-        }
-      } else {
-        if (flag === true) {
-          flag = true;
-        } else {
-          flag = true;
-        }
-      }
+      flag = true;
     }
   }
+
   return number_of_words_in_s;
 };
 
