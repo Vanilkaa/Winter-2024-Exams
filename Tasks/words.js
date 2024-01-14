@@ -1,13 +1,12 @@
 // Count words in a string
 
-//Step 2
-// Add 'use strict';
-// Add `const` and `let`
+//Step 3
+// Change identifiers case
 
 'use strict';
 
-const Words = function(s) {
-  let number_of_words_in_s = 0;
+const words = function(s) {
+  let numberOfWordsInS = 0;
   let flag = false;
 
   for (let c of s) {
@@ -15,13 +14,12 @@ const Words = function(s) {
       flag = false;
     } else {
       if (!flag) {
-        number_of_words_in_s++;
+        numberOfWordsInS++;
       }
       flag = true;
     }
   }
-
-  return number_of_words_in_s;
+  return numberOfWordsInS;
 };
 
 module.exports = Words;
