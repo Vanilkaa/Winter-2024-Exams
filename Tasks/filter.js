@@ -6,7 +6,7 @@
 'use strict';
 
 const filter = (T, t) => {
-  remove = [];
+  let remove = [];
   for (C of T) {
     let x = T.indexOf(C);
     if (typeof T[x] !== t) {
