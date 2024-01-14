@@ -1,10 +1,10 @@
 // Get one random element from an array
 
-//Step 2
-// Add 'use strict';
+//Step 3
+// Change identifiers case
 
 'use strict';
 
-const SAMPLE = (arr) => arr[Math.floor(Math.random() * arr.length)];
+const sample = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
-module.exports = SAMPLE;
+module.exports = sample;
