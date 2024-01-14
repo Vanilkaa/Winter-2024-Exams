@@ -1,19 +1,19 @@
 // Filter array by type name
 
-// Step 2
-// Change identifiers case
+// Step 3
+// Fix previous steps
 
 'use strict';
 
 const filter = (T, t) => {
   let remove = [];
-  for (C of T) {
+  for (let C of T) {
     let x = T.indexOf(C);
     if (typeof T[x] !== t) {
       remove.unshift(x);
     }
   }
-  for (x of remove) T.splice(x, 1);
+  for (let x of remove) T.splice(x, 1);
   return T;
 };
 
