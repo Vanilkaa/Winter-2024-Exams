@@ -1,19 +1,9 @@
 // Get month number
 
-Months = [
-  'jan',
-  'feb',
-  'mar',
-  'apr',
-  'may',
-  'jun',
-  'jul',
-  'aug',
-  'sep',
-  'oct',
-  'nov',
-  'dec',
-];
+//Step 1
+// Format code indentation and spacing
+
+Months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec',];
 
 Month = (s) => {
   l = Months.length;
