@@ -4,6 +4,8 @@
 // Add 'use strict';
 // Add `const` and `let`
 
+'use strict';
+
 const count = (obj) => {
   let sum = 0;
   let keys = Object.keys(obj);
