@@ -1,8 +1,9 @@
 // Shuffle an array
 
-// Step 1
-// Remove empty blocks
-// Change identifiers case
+// Step 2
+// Add 'use strict';
+
+'use strict';
 
 let shuffle = (...list) => {
   const [arr] = list;
