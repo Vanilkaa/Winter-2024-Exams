@@ -1,18 +1,19 @@
-// Step 1
-// Add 'use strict';
-// Add `const` and `let`
+// Step 2
+// Change identifiers case
+// Format code indentation and spacing
 
 // Split string into array by the first occurrence of separator
 
 'use strict';
 
-const SectionString = (s, t) => {
+const sectionString = (s, t) => {
   const i = s.indexOf(t);
   if (i < 0 || t == '') {
     return [s, ''];
-  } else {
+  } 
+  else {
     return [s.slice(0, i), s.slice(i + t.length)];
   }
 };
 
-module.exports = SectionString;
+module.exports = sectionString;
