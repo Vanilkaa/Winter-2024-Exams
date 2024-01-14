@@ -11,7 +11,7 @@ const only = (W, ...only) => {
   x.forEach((z) => {
     if (only.includes(z)) {
     } else {
-      delete z[z];
+      delete W[z];
     }
   });
   return W;
