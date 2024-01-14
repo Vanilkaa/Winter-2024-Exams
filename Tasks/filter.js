@@ -1,12 +1,11 @@
 // Filter array by type name
 
-// Step 1
-// Add 'use strict';
-// Add `const` and `let`
+// Step 2
+// Change identifiers case
 
 'use strict';
 
-const Filter = (T, t) => {
+const filter = (T, t) => {
   remove = [];
   for (C of T) {
     let x = T.indexOf(C);
@@ -18,4 +17,4 @@ const Filter = (T, t) => {
   return T;
 };
 
-module.exports = Filter;
+module.exports = filter;
