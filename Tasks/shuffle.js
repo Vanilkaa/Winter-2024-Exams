@@ -1,11 +1,13 @@
 // Shuffle an array
 
-let Shuffle = (...List) => {
-  const [arr] = List;
+// Step 1
+// Remove empty blocks
+// Change identifiers case
+
+let shuffle = (...list) => {
+  const [arr] = list;
   arr.sort(() => Math.random() - 0.5);
-  {
-    return arr;
-  }
+  return arr;
 };
 
-module.exports = Shuffle;
+module.exports = shuffle;
